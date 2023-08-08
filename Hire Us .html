@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Us | Cloud Tech Solutions</title>
+  <!-- Add Bootstrap CSS link here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <script src="./js/bootstrap.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./INDEX .HTML">
+      <img src="./Logo/Logo .png" alt="Cloud Tech Solutions" >
+    </a>
+    <!-- Add navigation links here -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./INDEX .HTML">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Portfolio .html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Meet The Team .html">Meet the Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./Hire Us .html">Hire Us</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hire Us section -->
+  <section class="container">
+    <h2 class="text-center">Hire Us</h2>
+    <p class="text-center">Select the services you need:</p>
+    <form action="./process-hire.php" method="post">
+      <div class="form-group">
+        <label for="type">Are you an individual or a corporation?</label>
+        <select class="form-control" id="type" name="type">
+          <option value="individual">Individual</option>
+          <option value="corporation">Corporation</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label>Select the number of services you need:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="3" id="three-services" name="service-number" required>
+          <label class="form-check-label" for="three-services">Three Services</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="2" id="two-services" name="service-number">
+          <label class="form-check-label" for="two-services">Two Services</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="1" id="single-service" name="service-number">
+          <label class="form-check-label" for="single-service">Single Service</label>
+        </div>
+      </div>
+      <div class="form-group" id="service-options">
+        <label>Select the services you need:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="content-writer" id="content-writer-checkbox" name="services[]">
+          <label class="form-check-label" for="content-writer-checkbox">Content Writing and S.E.O</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="content-writer" id="content-writer-checkbox" name="services[]">
+          <label class="form-check-label" for="content-writer-checkbox">Wordpress Development E-commerce Only</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="frontend-developer" id="frontend-developer-checkbox" name="services[]">
+          <label class="form-check-label" for="frontend-developer-checkbox">Frontend Website Development</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="backend-developer" id="backend-developer-checkbox" name="services[]">
+          <label class="form-check-label" for="backend-developer-checkbox">Backend Website Development</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </section>
+<script src="./hire-us.js">
+
+</script>  
+  
+  <div class="footer">
+    <footer><p>@Copyright Cloud Tech Solutions 2023</p>
+    <div class="footer-links">
+      <ul>
+        <li><a href="./INDEX .HTML">Home</a></li>
+        <li><a href="./Portfolio .html">Portfolio</a></li>
+        <li><a href="./Meet The Team .html">Meet The Team</a></li>
+        <li><a href="./Hire Us .html">Hire Us</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <!-- Add Bootstrap JS link here -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, skyblue, gray);
+}
+
+/* Navbar styles */
+.navbar {
+  background: linear-gradient(to right, #777, rgb(85, 167, 181))!important;
+}
+
+.navbar-brand {
+  margin-right: 2rem;
+}
+.navbar-brand img {
+  width: 150px; /* Adjust the width as desired */
+  height: 80px; /* Maintain aspect ratio */
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+/* Section styles */
+section {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #777;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: skyblue;
+  border-color: skyblue;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #777;
+  border-color: #777;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.5);
+}
+
+/* Text styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: skyblue;
+}
+
+.text-primary {
+  color: skyblue;
+}
+
+.text-secondary {
+  color: #777;
+}
+
+.text-accent {
+  color: #17A2B8;
+}
+/* Styles for screens smaller than 576px (mobile) */
+@media (max-width: 575px) {
+  /* Example: Adjust font size and margins for mobile */
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Example: Adjust card layout for mobile */
+  .card {
+    width: 100%;
+  }
+  
+  .card-img-top {
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+}
+
+/* Styles for screens between 576px and 991px (tablet) */
+@media (min-width: 576px) and (max-width: 991px) {
+  /* Example: Adjust container width and margins for tablet */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Example: Adjust column layout for tablet */
+  .col-md-4 {
+    width: 50%;
+  }
+}
+
+/* Styles for screens larger than 991px (desktop) */
+@media (min-width: 992px) {
+  /* Example: Adjust container width and margins for desktop */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* Example: Adjust column layout for desktop */
+  .col-md-4 {
+    width: 33.33%;
+  }
+}
+
+.footer {
+  background-color: #6C757D;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer p {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-links {
+  text-align: right;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+  
+  .footer-links {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-links li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
